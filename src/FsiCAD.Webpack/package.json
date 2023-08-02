@@ -1,0 +1,36 @@
+{
+  "name": "fsicad.webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "clean.fsicad.components": "tsc --build ../FsiCAD.Components/tsconfig.json --clean ",
+    "build.fsicad.components": "npm run clean.fsicad.components && tsc --build ../FsiCAD.Components/tsconfig.json",
+    "watch.fsicad.components": "tsc -w --project ../FsiCAD.Components/tsconfig.json",
+    "clean": "npm run clean.fsicad.components && tsc --build ./tsconfig.json --clean ",
+    "build": "npm run build.fsicad.components && webpack --config main.ts --config-name FsiCAD.Components.Js --config-name FsiCAD.Components.Css --config-name FsiCAD.Client.Css",
+    "watch": "webpack -w --config main.ts --config-name FsiCAD.Components.Css --config-name FsiCAD.Client.Css --mode development"
+  },
+  "keywords": [],
+  "author": "Wouter Naessens",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/webpack": "^5.28.1",
+    "@types/webpack-dev-server": "^4.7.2",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "eslint": "^8.46.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "source-map-loader": "^4.0.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-remove-empty-scripts": "^1.0.3"
+  }
+}

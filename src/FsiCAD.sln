@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Shared", "FsiCAD\Sha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Components", "FsiCAD.Components\FsiCAD.Components.csproj", "{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FsiCAD.Webpack", "FsiCAD.Webpack\FsiCAD.Webpack.esproj", "{12F19059-7EA6-4391-8557-6DC9D23C4DFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F19059-7EA6-4391-8557-6DC9D23C4DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F19059-7EA6-4391-8557-6DC9D23C4DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F19059-7EA6-4391-8557-6DC9D23C4DFD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{12F19059-7EA6-4391-8557-6DC9D23C4DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F19059-7EA6-4391-8557-6DC9D23C4DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F19059-7EA6-4391-8557-6DC9D23C4DFD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
