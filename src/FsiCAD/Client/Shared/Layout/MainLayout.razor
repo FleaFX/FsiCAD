@@ -1,0 +1,19 @@
+﻿@using FsiCAD.Components.CommandBar
+
+@inherits LayoutComponentBase
+
+<div class="page">
+    
+    <nav class="page-navigation">
+        <CommandBar>
+            <CommandButton Name="Explorer"
+                           Icon="copy-alt">
+                <span>Explorer interface here</span>
+            </CommandButton>
+        </CommandBar>
+    </nav>
+
+    <main class="page-body">
+        @Body
+    </main>
+</div>

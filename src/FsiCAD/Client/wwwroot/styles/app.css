@@ -1,1 +1,2 @@
+:root{--navbar-width: 3vw}:root{--background-dark: #232323;--background-primary: #333;--background-light: #727272;--foreground-dark: #666;--foreground-primary: #ccc;--foreground-light: #f1f1f1}*,*::before,*::after{box-sizing:border-box}html,body{width:100vw;height:100vh;margin:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:normal}.page{display:flex;width:100%;overflow:hidden}.page-body{background-color:var(--background-dark);color:var(--foreground-light);flex:auto}
 

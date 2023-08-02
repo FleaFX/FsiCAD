@@ -1,0 +1,17 @@
+﻿$background-dark: #232323;
+$background-primary: #333333;
+$background-light: #727272;
+
+$foreground-dark: #666666;
+$foreground-primary: #cccccc;
+$foreground-light: #f1f1f1;
+
+:root {
+    --background-dark: #{$background-dark};
+    --background-primary: #{$background-primary};
+    --background-light: #{$background-light};
+
+    --foreground-dark: #{$foreground-dark};
+    --foreground-primary: #{$foreground-primary};
+    --foreground-light: #{$foreground-light};
+}
