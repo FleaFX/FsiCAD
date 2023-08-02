@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Client", "FsiCAD\Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Shared", "FsiCAD\Shared\FsiCAD.Shared.csproj", "{C25E1217-011F-43BA-997F-3489FFEEB8FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Components", "FsiCAD.Components\FsiCAD.Components.csproj", "{7CBF6FD3-DFCA-4EBC-B34C-D475D2D36D3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Components", "FsiCAD.Components\FsiCAD.Components.csproj", "{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{C25E1217-011F-43BA-997F-3489FFEEB8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C25E1217-011F-43BA-997F-3489FFEEB8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C25E1217-011F-43BA-997F-3489FFEEB8FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CBF6FD3-DFCA-4EBC-B34C-D475D2D36D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CBF6FD3-DFCA-4EBC-B34C-D475D2D36D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CBF6FD3-DFCA-4EBC-B34C-D475D2D36D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CBF6FD3-DFCA-4EBC-B34C-D475D2D36D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
