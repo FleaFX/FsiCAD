@@ -4,6 +4,15 @@
     <CascadingValue TValue="ActivityBar" Value="this">
         @ChildContent
     </CascadingValue>
+    
+    <div class="footer">
+        <div class="activity-button">
+            <span class="fi fi-rr-circle-user" />
+        </div>
+        <div class="activity-button">
+            <span class="fi fi-rr-settings"></span>
+        </div>
+    </div>
 </nav>
 
 @if (Model.ActiveActivity is {} activity) {

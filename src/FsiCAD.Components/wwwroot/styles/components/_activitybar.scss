@@ -2,18 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-color: var(--background-primary);
     height: 100vh;
 
     .activity-button {
         font-size: 1.5em;
         color: var(--foreground-primary);
-
         display: flex;
-        height: 3em;
-        width: 3em;
-
+        height: 2.5em;
+        width: 2.5em;
         cursor: pointer;
         justify-content: center;
         align-items: center;
@@ -26,6 +23,13 @@
         &:hover {
             color: var(--foreground-light);
         }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
     }
 }
 
