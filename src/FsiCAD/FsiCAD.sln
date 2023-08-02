@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Server", "FsiCAD\Server\FsiCAD.Server.csproj", "{68BD2C0F-2DF2-4C98-B167-81B2C4785311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Server", "FsiCAD\Server\FsiCAD.Server.csproj", "{68BD2C0F-2DF2-4C98-B167-81B2C4785311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Client", "FsiCAD\Client\FsiCAD.Client.csproj", "{BF360523-02AF-4944-A691-21A4A908103D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Client", "FsiCAD\Client\FsiCAD.Client.csproj", "{BF360523-02AF-4944-A691-21A4A908103D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Shared", "FsiCAD\Shared\FsiCAD.Shared.csproj", "{C25E1217-011F-43BA-997F-3489FFEEB8FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Shared", "FsiCAD\Shared\FsiCAD.Shared.csproj", "{C25E1217-011F-43BA-997F-3489FFEEB8FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsiCAD.Components", "FsiCAD.Components\FsiCAD.Components.csproj", "{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Components", "FsiCAD.Components\FsiCAD.Components.csproj", "{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C48ACFA9-78B7-4934-8EF9-D56E20EDA935}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.github\workflows\build.yml = ..\..\.github\workflows\build.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
