@@ -18,11 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="CommandBar\CommandButton.razor" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="CommandBar\CommandButton.razor" />
+    <ProjectReference Include="..\FsiCAD.Core\FsiCAD.Core.csproj" />
   </ItemGroup>
 
 </Project>

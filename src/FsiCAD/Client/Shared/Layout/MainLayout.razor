@@ -1,16 +1,26 @@
-﻿@using FsiCAD.Components.CommandBar
+﻿@using FsiCAD.Components.ActivityBar
 
 @inherits LayoutComponentBase
 
 <div class="page">
     
     <nav class="page-navigation">
-        <CommandBar>
-            <CommandButton Name="Explorer"
-                           Icon="copy-alt">
+        <ActivityBar>
+            <Activity Name="Explorer"
+                      Icon="copy-alt">
                 <span>Explorer interface here</span>
-            </CommandButton>
-        </CommandBar>
+            </Activity>
+            
+            <Activity Name="Search"
+                      Icon="search">
+                <span>Search interface here</span>
+            </Activity>
+            
+            <Activity Name="Console"
+                      Icon="list-dropdown">
+                <span>Console interface here</span>
+            </Activity>
+        </ActivityBar>
     </nav>
 
     <main class="page-body">

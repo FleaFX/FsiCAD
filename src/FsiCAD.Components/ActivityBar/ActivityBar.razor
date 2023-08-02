@@ -1,0 +1,14 @@
+﻿@inherits ModelAwareComponentBase<ActivityBarState>
+
+<nav class="activity-bar">
+    <CascadingValue TValue="ActivityBar" Value="this">
+        @ChildContent
+    </CascadingValue>
+</nav>
+
+@code {
+
+    [Parameter, EditorRequired]
+    public RenderFragment ChildContent { get; set; } = null!;
+
+}

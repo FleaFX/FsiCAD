@@ -1,0 +1,23 @@
+﻿@using System.ComponentModel
+<div class=@CssClass @onclick="async () => await ToggleActivityAsync(this)">
+    <span class=@($"fi fi-rr-{Icon}") title=@Name />
+</div>
+
+@code {
+    [CascadingParameter]
+    ActivityBar ActivityBar { get; set; } = null!;
+
+    [Parameter, EditorRequired]
+    public string Name { get; set; } = null!;
+
+    [Parameter, EditorRequired]
+    public string Icon { get; set; } = null!;
+
+    [Parameter, EditorRequired]
+    public RenderFragment ChildContent { get; set; } = null!;
+
+    [EditorBrowsable(EditorBrowsableState.Never)]
+    public bool IsActive { get; set; }
+
+    string CssClass => $"activity-button{(IsActive ? " active" : null)}";
+}
