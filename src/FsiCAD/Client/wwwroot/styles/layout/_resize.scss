@@ -1,0 +1,18 @@
+﻿.resizable {
+    --resize-width: 200px;
+
+    .splitter {
+        display: flex;
+        width: 5px;
+        margin-left: auto;
+        cursor: ew-resize;
+
+        &:hover {
+            background: var(--highlight);
+        }
+    }
+
+    &.resizing .splitter {
+        background: var(--highlight);
+    }
+}

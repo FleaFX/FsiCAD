@@ -10,6 +10,7 @@ export const JsConfig: webpack.Configuration = {
     ...BaseConfig,
     ...JsMinificationConfig,
     entry: {
+        'resize': `${ComponentsPath}/resize.js`
     },
     output: {
         ...BaseConfig.output,

@@ -8,6 +8,11 @@ namespace FsiCAD.Components.ActivityBar;
 
 public record struct ActivityBarState(IEnumerable<Activity> Activities) {
     public ActivityBarState() : this(Enumerable.Empty<Activity>()) { }
+
+    /// <summary>
+    /// Gets the active <see cref="Activity"/>, or <see langword="null" /> if no activities are activated.
+    /// </summary>
+    public Activity? ActiveActivity => Activities?.FirstOrDefault(activity => activity.IsActive);
 }
 
 public record struct ToggleActivity(Activity Activity) : IDispatchable;

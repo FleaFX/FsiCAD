@@ -6,6 +6,14 @@
     </CascadingValue>
 </nav>
 
+@if (Model.ActiveActivity is {} activity) {
+    <div class="activity-content resizable">
+        @activity.ChildContent
+        
+        <div class="splitter" />
+    </div>
+}
+
 @code {
 
     [Parameter, EditorRequired]

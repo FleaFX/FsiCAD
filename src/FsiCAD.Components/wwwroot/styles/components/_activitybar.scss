@@ -28,3 +28,12 @@
         }
     }
 }
+
+.activity-content {
+    display: flex;
+    height: 100vh;
+    width: var(--resize-width);
+
+    background-color: var(--background-dark);
+    color: var(--foreground-primary);
+}
