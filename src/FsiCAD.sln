@@ -11,11 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Shared", "FsiCAD\Sha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsiCAD.Components", "FsiCAD.Components\FsiCAD.Components.csproj", "{4ED516C5-E5BE-4994-B4E4-D1E47D254FBA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C48ACFA9-78B7-4934-8EF9-D56E20EDA935}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\.github\workflows\build.yml = ..\..\.github\workflows\build.yml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

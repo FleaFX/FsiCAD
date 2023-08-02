@@ -22,10 +22,10 @@ jobs:
             dotnet-version: '7.0.x'
 
         - name: Restore packages
-          run: dotnet restore
+          run: dotnet restore src/FsiCAD.sln
 
         - name: Build
-          run: dotnet build --no-restore
+          run: dotnet build --no-restore src/FsiCAD.sln
           
         - name: Test
-          run: dotnet test --no-build --verbosity normal
+          run: dotnet test --no-build --verbosity normal src/FsiCAD.sln
