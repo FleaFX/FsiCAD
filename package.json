@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "fsicad.webpack": "file:src/FsiCAD.Webpack"
+  }
+}

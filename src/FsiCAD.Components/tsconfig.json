@@ -1,0 +1,6 @@
+{
+  "extends": "../FsiCAD.Webpack/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./wwwroot/scripts"
+  }
+}
