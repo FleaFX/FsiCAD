@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\FsiCAD.Components\FsiCAD.Components.csproj" />
     <ProjectReference Include="..\Shared\FsiCAD.Shared.csproj" />
   </ItemGroup>
 
