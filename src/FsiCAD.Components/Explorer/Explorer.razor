@@ -1,0 +1,13 @@
+﻿@inherits ModelAwareComponentBase<ExplorerState>
+
+<div class="explorer">
+    <h1>Explorer</h1>
+    
+    <CascadingValue TValue="Explorer" Value="this">
+        <ul>
+            <li>
+                <ProjectsSection />
+            </li>
+        </ul>
+    </CascadingValue>
+</div>

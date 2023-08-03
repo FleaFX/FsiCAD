@@ -25,4 +25,22 @@
     <ProjectReference Include="..\FsiCAD.Core\FsiCAD.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Explorer\Explorer.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Explorer\Explorer.razor" />
+    <_ContentIncludedByDefault Remove="Explorer\ProjectsSection.razor" />
+    <_ContentIncludedByDefault Remove="Explorer\SectionHeader.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Explorer\SectionHeader.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Explorer\ProjectsSection.razor" />
+  </ItemGroup>
+
 </Project>

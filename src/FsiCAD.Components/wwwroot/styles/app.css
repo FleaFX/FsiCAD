@@ -1,2 +1,63 @@
-.activity-bar{display:flex;flex-direction:column;align-items:center;background-color:var(--background-primary);height:100vh}.activity-bar .activity-button{font-size:1.5em;color:var(--foreground-primary);display:flex;height:2.5em;width:2.5em;cursor:pointer;justify-content:center;align-items:center}.activity-bar .activity-button.active{border-left:solid 1px var(--foreground-light);color:var(--foreground-light)}.activity-bar .activity-button:hover{color:var(--foreground-light)}.activity-bar .footer{display:flex;flex-direction:column;align-items:center;margin-top:auto}.activity-content{display:flex;height:100vh;width:var(--resize-width);background-color:var(--background-dark);color:var(--foreground-primary)}
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!../FsiCAD.Components/wwwroot/styles/app.scss ***!
+  \*****************************************************************************************************************************************************************/
+.activity-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-primary);
+  height: 100vh; }
+  .activity-bar .activity-button {
+    font-size: 1.5em;
+    color: var(--foreground-primary);
+    display: flex;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center; }
+    .activity-bar .activity-button.active {
+      border-left: solid 1px var(--foreground-light);
+      color: var(--foreground-light); }
+    .activity-bar .activity-button:hover {
+      color: var(--foreground-light); }
+  .activity-bar .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; }
+
+.activity-content {
+  display: flex;
+  height: 100vh;
+  width: var(--resize-width);
+  background-color: var(--background-dark);
+  color: var(--foreground-primary); }
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .explorer > h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .8em;
+    margin-left: .5em; }
+  .explorer > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .explorer > ul > li {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid var(--foreground-light); }
+      .explorer > ul > li h2 {
+        text-transform: uppercase;
+        font-size: .8em;
+        font-weight: bold; }
+      .explorer > ul > li::marker {
+        font-size: .8em;
+        color: var(--foreground-primary); }
+  .explorer .section-header {
+    cursor: pointer; }
 

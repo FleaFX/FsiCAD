@@ -1,0 +1,15 @@
+﻿<div class="section-header flex align center" @onclick="OnClick">
+    <span class=@($"fi fi-rr-angle-small-{(IsOpen ? "down" : "right")}") />
+    <h2>@Title</h2>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = null!;
+
+    [Parameter]
+    public bool IsOpen { get; set; }
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}

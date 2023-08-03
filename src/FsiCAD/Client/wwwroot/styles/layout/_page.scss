@@ -22,3 +22,29 @@ html, body {
         flex: auto;
     }
 }
+
+.flex {
+    display: flex;
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.align {
+        &.center {
+            align-items: center;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

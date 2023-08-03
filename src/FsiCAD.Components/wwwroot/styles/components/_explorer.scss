@@ -1,0 +1,39 @@
+﻿.explorer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & > h1 {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: .8em;
+        margin-left: .5em;
+    }
+
+    & > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        & > li {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid var(--foreground-light);
+
+            & h2 {
+                text-transform: uppercase;
+                font-size: .8em;
+                font-weight: bold;
+            }
+
+            &::marker {
+                font-size: .8em;
+                color: var(--foreground-primary);
+            }
+        }
+    }
+
+    .section-header {
+        cursor: pointer;
+    }
+}

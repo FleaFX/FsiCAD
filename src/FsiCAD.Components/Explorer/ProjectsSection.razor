@@ -1,0 +1,9 @@
+﻿@inherits ExplorerSection
+
+<SectionHeader Title="Projects"
+               IsOpen=@IsExpanded
+               OnClick="OnClickHeader"/>
+               
+<div class=@(!IsExpanded ? "hidden" : null)>
+    Projects
+</div>
