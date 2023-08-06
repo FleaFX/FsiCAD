@@ -1,6 +1,9 @@
 ﻿using System.Reflection;
+using FsiCAD.Components.Services;
+using FsiCAD.Components.Services.IndexedDB;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.JSInterop;
 
 namespace FsiCAD.Components.Extensions; 
 
@@ -9,7 +12,8 @@ public static class ExtensionsForIServiceCollection {
     /// Makes the necessary registrations to use FsiCAD.Components.
     /// </summary>
     public static IServiceCollection AddComponents(this IServiceCollection services) =>
-        services.AddMessageDispatching();
+        services
+            .AddMessageDispatching();
 
     /// <summary>
     /// Scans the application for implementations of <see cref="IDispatchable"/> and registers a message dispatcher for them.
@@ -41,6 +45,15 @@ public static class ExtensionsForIServiceCollection {
         services.TryAddSingleton(messageDispatcherType);
         services.TryAddSingleton(typeof(IObservable<>).MakeGenericType(messageType), sp => sp.GetRequiredService(messageDispatcherType));
 
+        return services;
+    }
+
+    /// <summary>
+    /// Adds the necessary registrations to work with IndexedDB.
+    /// </summary>
+    public static IServiceCollection AddIndexedDb(this IServiceCollection services, string databaseName, int version = 1) {
+        services.TryAddSingleton(sp => new IndexedDbConnectionFactory(sp.GetRequiredService<IJSRuntime>(), databaseName, version));
+        services.TryAddTransient(typeof(IRepository<>), typeof(IndexedDbRepository<>));
         return services;
     }
 }

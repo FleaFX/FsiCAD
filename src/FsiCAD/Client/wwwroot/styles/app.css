@@ -12,7 +12,8 @@
   --foreground-dark: #666666;
   --foreground-primary: #cccccc;
   --foreground-light: #f1f1f1;
-  --highlight: #005a9e; }
+  --highlight: #005a9e;
+  --highlight-light: #1177bb; }
 
 *, *::before, *::after {
   box-sizing: border-box; }
@@ -62,4 +63,23 @@ html, body {
       background: var(--highlight); }
   .resizable.resizing .splitter {
     background: var(--highlight); }
+
+button {
+  border: none;
+  border-radius: .4em;
+  margin: .4em;
+  padding: .8em;
+  cursor: pointer; }
+  button.primary {
+    background-color: var(--highlight);
+    color: var(--foreground-primary); }
+    button.primary:hover {
+      background-color: var(--highlight-light);
+      color: var(--foreground-light); }
+
+.mb-s {
+  margin-bottom: .8em; }
+
+.mb-m {
+  margin-bottom: 1em; }
 

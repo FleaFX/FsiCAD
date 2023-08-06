@@ -1,0 +1,17 @@
+﻿button {
+    border: none;
+    border-radius: .4em;
+    margin: .4em;
+    padding: .8em;
+    cursor: pointer;
+
+    &.primary {
+        background-color: var(--highlight);
+        color: var(--foreground-primary);
+
+        &:hover {
+            background-color: var(--highlight-light);
+            color: var(--foreground-light);
+        }
+    }
+}

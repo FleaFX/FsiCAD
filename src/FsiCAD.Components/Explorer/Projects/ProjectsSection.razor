@@ -1,0 +1,10 @@
+﻿@inherits ModelAwareComponentBase<ProjectsSectionState>
+
+<ExplorerSection Title="Projects">
+    @if (!Model.Projects.Any()) {
+        <div class="flex column align center">
+            <span class="mb-s">You have no projects yet.</span>
+            <button class="primary">Create new project</button>
+        </div>
+    }
+</ExplorerSection>

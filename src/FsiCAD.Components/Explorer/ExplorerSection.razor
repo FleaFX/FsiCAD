@@ -1,0 +1,17 @@
+﻿<SectionHeader Title="Projects"
+               IsOpen=@IsExpanded
+               OnClick=@OnClickHeader />
+
+<div class="section-body @(!IsExpanded ? "hidden" : null)">
+    @ChildContent
+</div>
+
+@code {
+
+    [Parameter]
+    public string Title { get; set; } = null!;
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } = null!;
+
+}

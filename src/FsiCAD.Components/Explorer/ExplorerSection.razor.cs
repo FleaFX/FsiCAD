@@ -5,7 +5,7 @@ namespace FsiCAD.Components.Explorer;
 /// <summary>
 /// Base class for explorer sections.
 /// </summary>
-public abstract class ExplorerSection : ComponentBase, IDispatchable {
+public partial class ExplorerSection : IDispatchable {
     [Inject] MessageDispatcher<ToggleSection> ToggleSectionDispatcher { get; set; } = null!;
     [CascadingParameter] Explorer Explorer { get; set; } = null!;
 

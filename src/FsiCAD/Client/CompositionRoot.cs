@@ -26,7 +26,8 @@ public static class CompositionRoot {
         builder.Services
             .AddComponents()
             .AddMessageDispatching()
-            .AddStoreFactories();
+            .AddStoreFactories()
+            .AddIndexedDb("FsiCAD");
 
         return builder;
     }

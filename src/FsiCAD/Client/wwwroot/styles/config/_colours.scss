@@ -8,6 +8,7 @@ $foreground-primary: #cccccc;
 $foreground-light: #f1f1f1;
 
 $highlight: #005a9e;
+$highlight-light: #1177bb;
 
 :root {
     --background-darker: #{$background-darker};
@@ -20,4 +21,5 @@ $highlight: #005a9e;
     --foreground-light: #{$foreground-light};
 
     --highlight: #{$highlight};
+    --highlight-light: #{$highlight-light};
 }

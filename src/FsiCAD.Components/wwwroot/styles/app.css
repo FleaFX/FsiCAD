@@ -60,4 +60,7 @@
         color: var(--foreground-primary); }
   .explorer .section-header {
     cursor: pointer; }
+  .explorer .section-body {
+    padding: .8em;
+    font-size: .8em; }
 
